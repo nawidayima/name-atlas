@@ -4,12 +4,14 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>A Name That Traveled: a naming dossier</title>
-<meta name="description" content="Criteria, research, and every candidate name for a child arriving 2027. Sanskrit roots, Buddhist journeys, schoolyard-tested.">
+<meta name="description" content="Criteria and twenty-seven candidate names for a child arriving 2027, with etymologies linked to primary sources. Sanskrit roots and their journeys across Asia.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Eczar:wght@400;500;600;700&family=Work+Sans:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@500&display=swap&text=%E7%A6%AA%E7%A6%85%E5%BD%8C%E5%8B%92%E5%BC%A5%E9%A0%88%E5%B1%B1%E5%88%B9%E9%82%A3%E7%9C%9E" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@500&display=swap&text=%EC%84%A0%EB%AF%B8%EB%A5%B5%EC%88%98%EC%82%B0" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Myanmar:wght@500&display=swap&text=%E1%80%87%E1%80%B1%E1%80%9A%E1%80%BB" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Tibetan:wght@500&display=swap&text=%E0%BD%94%E0%BD%91%E0%BE%A8" rel="stylesheet">
 <style>
 :root{
   --night:#16142e;
@@ -20,7 +22,7 @@
   --moon:#f3eddf;
   --dusk:#9a93c4;
   --dim:#6d67a0;
-  --serif:"Eczar","Noto Serif JP","Noto Serif KR",serif;
+  --serif:"Eczar","Noto Serif JP","Noto Serif KR","Noto Serif Myanmar","Noto Serif Tibetan",serif;
   --sans:"Work Sans",system-ui,sans-serif;
   --mono:"IBM Plex Mono",ui-monospace,monospace;
 }
@@ -37,8 +39,8 @@ body{
 ::selection{background:var(--dawn);color:var(--night)}
 a{color:var(--saffron);text-decoration:underline;text-decoration-color:rgba(233,162,59,.4);text-underline-offset:3px}
 a:hover{text-decoration-color:var(--saffron)}
-a:focus-visible,button:focus-visible{outline:2px solid var(--saffron);outline-offset:3px;border-radius:2px}
-.wrap{max-width:1040px;margin:0 auto;padding:0 24px}
+a:focus-visible{outline:2px solid var(--saffron);outline-offset:3px;border-radius:2px}
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px}
 
 /* ---------- hero ---------- */
 .hero{
@@ -47,13 +49,8 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--saffron);outline-of
   overflow:hidden;
   border-bottom:1px solid var(--card-edge);
 }
-.hero .stars{
-  position:absolute;inset:0;pointer-events:none;opacity:.8;
-}
-.hero .stars i{
-  position:absolute;width:2px;height:2px;border-radius:50%;
-  background:var(--moon);opacity:.5;
-}
+.hero .stars{position:absolute;inset:0;pointer-events:none;opacity:.8}
+.hero .stars i{position:absolute;width:2px;height:2px;border-radius:50%;background:var(--moon);opacity:.5}
 .hero::after{
   content:"";position:absolute;left:0;right:0;bottom:0;height:46%;
   background:linear-gradient(180deg,transparent 0%,rgba(242,101,69,.07) 45%,rgba(242,101,69,.16) 78%,rgba(233,162,59,.22) 100%);
@@ -71,7 +68,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--saffron);outline-of
   line-height:1.08;margin:1.1rem 0 1.2rem;letter-spacing:-.01em;
 }
 .hero h1 em{font-style:normal;color:var(--dawn)}
-.hero .lede{max-width:34rem;color:var(--dusk);font-size:1.05rem}
+.hero .lede{max-width:35rem;color:var(--dusk);font-size:1.05rem}
 .hero .lede strong{color:var(--moon);font-weight:500}
 
 /* ---------- transmission chain ---------- */
@@ -79,16 +76,12 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--saffron);outline-of
   font-family:var(--mono);font-size:.72rem;letter-spacing:.18em;
   text-transform:uppercase;color:var(--dim);margin:3.2rem 0 1.1rem;
 }
-.chain{
-  display:flex;align-items:stretch;flex-wrap:wrap;gap:.35rem 0;
-}
+.chain{display:flex;align-items:stretch;flex-wrap:wrap;gap:.35rem 0;max-width:56rem}
 .tok{
   display:flex;flex-direction:column;align-items:center;
   min-width:5.2rem;padding:.2rem .5rem;text-align:center;
 }
-.tok .glyph{
-  font-family:var(--serif);font-size:2rem;line-height:1.25;color:var(--moon);
-}
+.tok .glyph{font-family:var(--serif);font-size:2rem;line-height:1.25;color:var(--moon)}
 .tok .rom{font-family:var(--mono);font-size:.72rem;color:var(--saffron);margin-top:.3rem}
 .tok .where{font-family:var(--mono);font-size:.62rem;color:var(--dim);letter-spacing:.08em;text-transform:uppercase;margin-top:.15rem}
 .tok.dest .glyph{color:var(--dawn)}
@@ -100,7 +93,6 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--saffron);outline-of
   content:"›";position:absolute;right:-2px;top:-.85em;
   color:var(--dim);font-size:.85rem;font-family:var(--mono);
 }
-/* hero chain entrance */
 @media (prefers-reduced-motion:no-preference){
   .hero .tok,.hero .link{opacity:0;transform:translateY(8px);animation:rise .7s ease forwards}
   .hero .tok:nth-child(1){animation-delay:.3s}
@@ -124,7 +116,7 @@ section{padding:5.5rem 0 0}
   font-family:var(--serif);font-weight:600;font-size:clamp(1.7rem,3.4vw,2.4rem);
   margin-top:.5rem;line-height:1.15;
 }
-.sec-head p{color:var(--dusk);max-width:38rem;margin-top:.6rem}
+.sec-head p{color:var(--dusk);max-width:44rem;margin-top:.6rem}
 
 /* brief */
 .families{
@@ -143,117 +135,45 @@ section{padding:5.5rem 0 0}
 .crit p{font-size:.92rem;color:var(--dusk);margin-top:.4rem}
 .crit p b{color:var(--moon);font-weight:500}
 
-/* method strip */
-.passes{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1rem}
-.pass{border-left:2px solid var(--dawn);padding:.2rem 0 .2rem 1.1rem}
-.pass .k{font-family:var(--mono);font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--saffron)}
-.pass p{font-size:.9rem;color:var(--dusk);margin-top:.35rem}
-
-/* rarity map */
-.map{border:1px solid var(--card-edge);border-radius:14px;background:var(--card);padding:1.8rem 1.6rem 1.2rem;position:relative;overflow:hidden}
-.map .scale-note{font-family:var(--mono);font-size:.68rem;color:var(--dim);margin-bottom:1.4rem}
-.rowchart{position:relative}
-.band{
-  --barcol:calc(100% - 9.5rem - 4.2rem - 1.2rem);
-  position:absolute;top:-0.4rem;bottom:0;
-  left:calc(9.5rem + .6rem + var(--barcol) * .27);
-  width:calc(var(--barcol) * .27);
-  background:rgba(233,162,59,.07);border-left:1px dashed rgba(233,162,59,.5);border-right:1px dashed rgba(233,162,59,.5);
-  pointer-events:none;
+/* ---------- candidate cards ---------- */
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:1rem}
+.card{
+  border:1px solid var(--card-edge);border-radius:14px;
+  padding:1.5rem 1.5rem 1.15rem;
+  background:linear-gradient(170deg,var(--card),rgba(32,29,66,.35));
+  display:flex;flex-direction:column;
 }
-.band span{
-  position:absolute;top:-1.15rem;left:50%;transform:translateX(-50%);
-  font-family:var(--mono);font-size:.62rem;letter-spacing:.14em;color:var(--saffron);text-transform:uppercase;white-space:nowrap;
+.card .tag{
+  font-family:var(--mono);font-size:.6rem;letter-spacing:.16em;
+  text-transform:uppercase;color:var(--dim);margin-bottom:.55rem;
 }
-.bar-row{display:grid;grid-template-columns:9.5rem 1fr 4.2rem;align-items:center;gap:.6rem;padding:.28rem 0;font-family:var(--mono);font-size:.78rem}
-.bar-row .n{color:var(--dusk);text-align:right;padding-right:.2rem}
-.bar-row.hot .n{color:var(--moon)}
-.bar-row .v{color:var(--dim);font-size:.72rem}
-.bar{height:9px;border-radius:5px;background:var(--dim);opacity:.45;min-width:3px}
-.bar-row.hot .bar{background:linear-gradient(90deg,var(--dawn),var(--saffron));opacity:1}
-.bar-row.zero .bar{background:none;border:1px dashed var(--dim);height:7px}
-.map .legend{font-family:var(--mono);font-size:.66rem;color:var(--dim);margin-top:1.2rem}
-.map .legend b{color:var(--saffron);font-weight:500}
-
-/* finalist cards */
-.rank{
-  font-family:var(--mono);font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;
-  color:var(--dawn);
+.card .tag em{font-style:normal;color:var(--saffron)}
+.card h3{
+  font-family:var(--serif);font-weight:600;font-size:1.75rem;line-height:1.1;
 }
-.finalist{
-  border:1px solid var(--card-edge);border-radius:16px;background:var(--card);
-  padding:2.2rem 2.2rem 2rem;margin-bottom:1.6rem;
-  display:grid;grid-template-columns:1.55fr 1fr;gap:2.4rem;
+.card h3 .script{color:var(--dim);font-weight:400;font-size:1.15rem;margin-left:.45rem}
+.card .say{
+  font-family:var(--mono);font-size:.72rem;color:var(--saffron);
+  margin:.3rem 0 .8rem;
 }
-.finalist .name{
-  font-family:var(--serif);font-weight:600;font-size:2.5rem;line-height:1.05;margin:.35rem 0 .1rem;
+.card .ety{font-size:.88rem;color:var(--dusk);flex:1}
+.card .ety b{color:var(--moon);font-weight:500}
+.card .facts{
+  font-family:var(--mono);font-size:.7rem;color:var(--dusk);line-height:1.8;
+  margin-top:1rem;padding-top:.8rem;border-top:1px dashed var(--card-edge);
 }
-.finalist .name span{color:var(--dim);font-weight:400;font-size:1.3rem;margin-left:.6rem}
-.finalist .epithet{font-family:var(--serif);color:var(--saffron);font-size:1.1rem;margin-bottom:1rem}
-.finalist .story{font-size:.95rem;color:var(--dusk)}
-.finalist .story b{color:var(--moon);font-weight:500}
-.finalist .story p+p{margin-top:.7rem}
-.finalist .chain{margin-top:1.4rem;padding-top:1.2rem;border-top:1px dashed var(--card-edge)}
-.finalist .tok .glyph{font-size:1.5rem}
-.finalist .tok{min-width:4.2rem}
-.rail{border-left:1px dashed var(--card-edge);padding-left:1.8rem;align-self:start}
-.rail dl{font-family:var(--mono);font-size:.78rem}
-.rail dt{color:var(--dim);font-size:.64rem;letter-spacing:.16em;text-transform:uppercase;margin-top:1rem}
-.rail dt:first-child{margin-top:0}
-.rail dd{color:var(--moon);margin-top:.2rem}
-.rail dd em{font-style:normal;color:var(--saffron)}
-.verdict{
-  margin-top:1.5rem;padding:.9rem 1rem;border-radius:10px;
-  background:rgba(242,101,69,.09);border:1px solid rgba(242,101,69,.3);
-  font-size:.85rem;color:var(--moon);
-}
-.verdict b{color:var(--dawn);font-weight:600}
-
-/* wildcards */
-.wild-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:1rem}
-.wild{border:1px solid var(--card-edge);border-radius:14px;padding:1.6rem;background:linear-gradient(170deg,var(--card),rgba(32,29,66,.35))}
-.wild .name{font-family:var(--serif);font-weight:600;font-size:1.7rem}
-.wild .name span{color:var(--dim);font-weight:400;font-size:1rem;margin-left:.4rem}
-.wild .epithet{color:var(--saffron);font-family:var(--serif);font-size:.98rem;margin-bottom:.7rem}
-.wild p{font-size:.88rem;color:var(--dusk)}
-.wild p b{color:var(--moon);font-weight:500}
-.wild .stat{font-family:var(--mono);font-size:.7rem;color:var(--dim);margin-top:.9rem;padding-top:.7rem;border-top:1px dashed var(--card-edge)}
-.wild .stat em{font-style:normal;color:var(--saffron)}
-
-/* graveyard */
-.grave-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:.8rem}
-.grave{
-  border:1px solid rgba(154,147,196,.14);border-radius:10px;padding:1rem 1.2rem;
-  display:flex;gap:1rem;align-items:baseline;background:rgba(32,29,66,.35);
-}
-.grave .n{font-family:var(--serif);font-size:1.15rem;font-weight:500;color:var(--dusk);min-width:4.6rem}
-.grave p{font-size:.84rem;color:var(--dim)}
-.grave p b{color:var(--dusk);font-weight:500}
-.grave .why{font-family:var(--mono);font-size:.62rem;letter-spacing:.12em;text-transform:uppercase;color:var(--dawn);display:block;margin-bottom:.15rem}
-
-/* shelf */
-.shelf{border:1px dashed var(--saffron);border-radius:14px;padding:1.8rem 2rem;background:rgba(233,162,59,.05)}
-.shelf h3{font-family:var(--serif);font-size:1.3rem;font-weight:600;color:var(--saffron)}
-.shelf>p{font-size:.9rem;color:var(--dusk);margin-top:.4rem;max-width:40rem}
-.shelf ul{list-style:none;margin-top:1.2rem;display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1rem}
-.shelf .n{font-family:var(--serif);font-size:1.15rem;color:var(--moon)}
-.shelf li p{font-size:.84rem;color:var(--dusk);margin-top:.2rem}
+.card .facts em{font-style:normal;color:var(--moon)}
+.card .watch{font-family:var(--mono);font-size:.7rem;color:var(--dim);line-height:1.7}
+.card .watch b{color:var(--dawn);font-weight:500}
 
 /* footer */
 footer{margin-top:6rem;border-top:1px solid var(--card-edge);padding:2.5rem 0 3.5rem}
-footer .trivia{
-  font-family:var(--serif);font-size:1.05rem;color:var(--dusk);max-width:36rem;
-}
+footer .trivia{font-family:var(--serif);font-size:1.05rem;color:var(--dusk);max-width:36rem}
 footer .trivia b{color:var(--saffron);font-weight:500}
 footer .meta{font-family:var(--mono);font-size:.68rem;color:var(--dim);margin-top:1.4rem;line-height:2}
 
 @media (max-width:760px){
   .hero{padding:5.5rem 0 5rem}
-  .finalist{grid-template-columns:1fr;gap:1.6rem;padding:1.6rem}
-  .rail{border-left:none;border-top:1px dashed var(--card-edge);padding-left:0;padding-top:1.4rem}
-  .bar-row{grid-template-columns:5.4rem 1fr 3.4rem;font-size:.7rem}
-  .band{--barcol:calc(100% - 5.4rem - 3.4rem - 1.2rem);left:calc(5.4rem + .6rem + var(--barcol) * .27)}
-  .grave{flex-direction:column;gap:.3rem}
   section{padding-top:4rem}
 }
 </style>
@@ -265,7 +185,7 @@ footer .meta{font-family:var(--mono);font-size:.68rem;color:var(--dim);margin-to
   <div class="wrap">
     <p class="eyebrow">A naming dossier · child arriving 2027</p>
     <h1>A name that <em>traveled</em></h1>
-    <p class="lede">Sanskrit at its root, Buddhist in its journey, at home in an American classroom. This page holds <strong>our criteria, the research, and every candidate we considered</strong>. Each etymology was checked link by link, each name measured against raw birth data and stress-tested for the schoolyard.</p>
+    <p class="lede">Sanskrit at its root, Buddhist in its journey, at home in an American classroom. This page holds <strong>our criteria and twenty-seven candidates in plain alphabetical order</strong>, each with its etymology, its journey, and links to the original sources. The choosing is ours.</p>
 
     <p class="chain-label">Proof it's possible: one word's 1,500-year journey</p>
     <div class="chain" aria-label="The word dhyāna traveling from Sanskrit to Japanese Zen">
@@ -278,7 +198,7 @@ footer .meta{font-family:var(--mono);font-size:.68rem;color:var(--dim);margin-to
       <div class="tok"><span class="glyph">선</span><span class="rom">sŏn</span><span class="where">Korea</span></div>
       <div class="tok dest"><span class="glyph">禅</span><span class="rom">zen</span><span class="where">Japan</span></div>
     </div>
-    <p class="chain-note">The word "Zen" is half of a Chinese attempt to spell a Sanskrit sound, and the meaning rode inside the pronunciation across four languages. Names can carry both our worlds. Some already have.</p>
+    <p class="chain-note">The word "Zen" is half of a Chinese attempt to spell a Sanskrit sound, and the meaning rode inside the pronunciation across four languages. The same current carried names south into Thailand, Burma, Cambodia and Java. Names can hold both our worlds. Some already do.</p>
   </div>
 </header>
 
@@ -295,7 +215,7 @@ footer .meta{font-family:var(--mono);font-size:.68rem;color:var(--dim);margin-to
       <span class="x">×</span>
       <div>One from the Konkan coast<small>via America</small></div>
       <span class="x">+</span>
-      <div>Sanskrit pride · Buddhist empiricism · Korea &amp; Japan · science<small>what we carry</small></div>
+      <div>Sanskrit pride · Buddhist empiricism · East &amp; Southeast Asia · science<small>what we carry</small></div>
     </div>
     <div class="crit-grid">
       <div class="crit reveal"><div class="k">Gender-neutral</div><p>Works for any kid, and rare enough that <b>the child gets to define the name</b>.</p></div>
@@ -307,199 +227,258 @@ footer .meta{font-family:var(--mono);font-size:.68rem;color:var(--dim);margin-to
     </div>
   </section>
 
-  <!-- ============ METHOD ============ -->
-  <section id="method">
+  <!-- ============ CANDIDATES ============ -->
+  <section id="candidates">
     <div class="sec-head reveal">
-      <p class="eyebrow">Method</p>
-      <h2>Three research passes</h2>
+      <p class="eyebrow">The candidates</p>
+      <h2>Twenty-seven names, A to Z</h2>
+      <p>Equal cards, alphabetical order, no ranking. Each etymology links to primary texts or the Sanskrit lexica; birth counts are raw 2024 <a href="https://www.ssa.gov/oact/babynames/">US Social Security data</a> where any exist, and "watch" notes record collisions we found, for you to weigh. Three early ideas (Anu, Kanad, Sachi) are omitted; each collided with something no spelling could fix.</p>
     </div>
-    <div class="passes">
-      <div class="pass reveal"><div class="k">01 · Etymology</div><p>We traced every transmission chain link by link, kept the genuine journeys, and flagged the coincidences. Sumi is not Sumeru, and the city of Nara is not Sanskrit.</p></div>
-      <div class="pass reveal"><div class="k">02 · Popularity</div><p>Raw <a href="https://www.ssa.gov/oact/babynames/">US Social Security birth data</a> through 2024 and 2025, plus <a href="https://www.bdm.vic.gov.au/popular-baby-names-victoria-2025">Australian state data</a>, to put numbers on "rare but fashionable".</p></div>
-      <div class="pass reveal"><div class="k">03 · The schoolyard screen</div><p>Teasing hooks, slang, and brand collisions across six languages. Several beautiful names did not survive.</p></div>
-    </div>
-  </section>
+    <div class="cards">
 
-  <!-- ============ RARITY MAP ============ -->
-  <section id="rarity">
-    <div class="sec-head reveal">
-      <p class="eyebrow">The data</p>
-      <h2>The rarity map</h2>
-      <p>US births per year, from the <a href="https://www.ssa.gov/oact/babynames/">Social Security Administration's raw files</a> (2024, log scale). The names everyone suggests are fashionable and nowhere near rare.</p>
-    </div>
-    <div class="map reveal">
-      <p class="scale-note">bar length = US births per year, log scale · longer bar = more common</p>
-      <div class="rowchart">
-        <div class="band" aria-hidden="true"><span>the sweet spot</span></div>
-        <div class="bar-row"><span class="n">Kai</span><span class="bar" style="width:98%"></span><span class="v">4,276</span></div>
-        <div class="bar-row"><span class="n">Bodhi</span><span class="bar" style="width:82%"></span><span class="v">1,110</span></div>
-        <div class="bar-row"><span class="n">Veda</span><span class="bar" style="width:71%"></span><span class="v">407</span></div>
-        <div class="bar-row"><span class="n">Zen</span><span class="bar" style="width:66%"></span><span class="v">277</span></div>
-        <div class="bar-row"><span class="n">Kaya</span><span class="bar" style="width:66%"></span><span class="v">268</span></div>
-        <div class="bar-row"><span class="n">Tara</span><span class="bar" style="width:65%"></span><span class="v">247</span></div>
-        <div class="bar-row"><span class="n">Nara</span><span class="bar" style="width:51%"></span><span class="v">72 ↗</span></div>
-        <div class="bar-row hot"><span class="n">Kavi</span><span class="bar" style="width:50%"></span><span class="v">66</span></div>
-        <div class="bar-row hot"><span class="n">Reva</span><span class="bar" style="width:49%"></span><span class="v">63</span></div>
-        <div class="bar-row"><span class="n">Yuki</span><span class="bar" style="width:45%"></span><span class="v">44</span></div>
-        <div class="bar-row hot"><span class="n">Miro</span><span class="bar" style="width:38%"></span><span class="v">23</span></div>
-        <div class="bar-row"><span class="n">Pema</span><span class="bar" style="width:28%"></span><span class="v">10</span></div>
-        <div class="bar-row hot zero"><span class="n">Aruni</span><span class="bar" style="width:4%"></span><span class="v">0</span></div>
-        <div class="bar-row zero"><span class="n">Meru</span><span class="bar" style="width:4%"></span><span class="v">0</span></div>
-      </div>
-      <p class="legend"><b>▮ warm bars</b> = our contenders · grey = context · dashed = no recorded US births, ever. Kai is US&nbsp;#93 and Victoria&nbsp;#32; Bodhi is US&nbsp;#265 and Victoria&nbsp;#83: the sound we want, already taken.</p>
-    </div>
-  </section>
+      <article class="card reveal">
+        <p class="tag">Sanskrit · <em>via Thailand</em></p>
+        <h3>Arun <span class="script">अरुण</span></h3>
+        <p class="say">ah-ROON · "dawn"</p>
+        <p class="ety">From <a href="https://www.wisdomlib.org/definition/aruna">aruṇa</a>, the red glow before sunrise, personified as the <b>charioteer who drives the sun's horses into the sky</b>. The figure crossed into Southeast Asia with Buddhism: Bangkok's riverside Temple of Dawn, <a href="https://en.wikipedia.org/wiki/Wat_Arun">Wat Arun</a>, carries the same name.</p>
+        <p class="facts">common in India &amp; Thailand · rare in the US · <em>already short</em></p>
+        <p class="watch"><b>watch:</b> reads male across South and Southeast Asia</p>
+      </article>
 
-  <!-- ============ FINALISTS ============ -->
-  <section id="finalists">
-    <div class="sec-head reveal">
-      <p class="eyebrow">The finalists</p>
-      <h2>Three names that survived everything</h2>
-    </div>
+      <article class="card reveal">
+        <p class="tag">Sanskrit</p>
+        <h3>Aruni <span class="script">अरुणि</span></h3>
+        <p class="say">ah-ROO-nee · "of the dawn"</p>
+        <p class="ety">A patronymic of <a href="https://www.wisdomlib.org/definition/aruna">aruṇa</a>, carried by <b>Uddālaka Āruṇi</b> of the <a href="https://en.wikisource.org/wiki/Sacred_Books_of_the_East/Volume_1">Chāndogya Upaniṣad</a>, who taught his son with a demonstration: salt dissolved overnight in water, invisible yet present in every sip. The Indologist Walter Ruben counted him among the earliest natural philosophers on record.</p>
+        <p class="facts">no recorded US births · unisex in India &amp; Nepal, F in Sri Lanka · <em>short: Aru, Runi</em></p>
+        <p class="watch"><b>watch:</b> a permanent spell-it-out name</p>
+      </article>
 
-    <!-- KAVI -->
-    <article class="finalist reveal">
-      <div>
-        <p class="rank">Finalist · 01</p>
-        <h3 class="name">Kavi <span>कवि · KAH-vee</span></h3>
-        <p class="epithet">The seer-scientist</p>
-        <div class="story">
-          <p>In the <a href="https://en.wikisource.org/wiki/The_Rig_Veda">Ṛgveda</a>, a <b><a href="https://www.wisdomlib.org/definition/kavi">kavi</a></b> is a seer before he is a poet: the sage who perceives <b>ṛta, the hidden order of the cosmos</b>, and puts it into words. Sanskrit comes closest here to a single word for looking at the world and seeing what is actually there. That describes a scientist as well as it describes a poet.</p>
-          <p>Phonetically it sits beside Kai, Levi, and Ravi, so it sounds native in a 2027 American classroom while being nobody else's name. It needs no explanation in India or in the West.</p>
-        </div>
-      </div>
-      <aside class="rail">
-        <dl>
-          <dt>US births / yr</dt><dd>66 · <em>rising +144% since 2020</em>, still years from common</dd>
-          <dt>Gender read</dt><dd>92% M in usage, but American Girl's 2023 Girl of the Year is <em>Kavi Sharma</em>. Reads both ways.</dd>
-          <dt>Short form</dt><dd>Already short · "Kav" happens naturally</dd>
-          <dt>Risk screen</dt><dd>"cavity" tease (mild) · KAH/KAY vowel coaching</dd>
-        </dl>
-        <p class="verdict"><b>Verdict:</b> the dual citizen. Strongest science story per syllable, effortless in both worlds.</p>
-      </aside>
-    </article>
+      <article class="card reveal">
+        <p class="tag">Sanskrit · <em>via Java</em></p>
+        <h3>Bayu</h3>
+        <p class="say">BAH-yoo · "wind"</p>
+        <p class="ety">The Javanese and Indonesian form of <a href="https://www.wisdomlib.org/definition/vayu">vāyu</a>, the <b>Vedic god of wind and breath</b>. In the Javanese shadow-play tradition Bayu is the divine father of Hanuman and of the hero Bima, and the name is an everyday Indonesian given name today.</p>
+        <p class="facts">common in Indonesia, M-leaning there · rare in the US · <em>already short</em></p>
+        <p class="watch"><b>watch:</b> English readers may say BAY-you</p>
+      </article>
 
-    <!-- MIRO -->
-    <article class="finalist reveal">
-      <div>
-        <p class="rank">Finalist · 02</p>
-        <h3 class="name">Miro <span>MEE-roh</span></h3>
-        <p class="epithet">Loving-kindness, well-traveled</p>
-        <div class="story">
-          <p>The East Asia transmission name we hoped existed, genuine at every link. Sanskrit <b>mitra</b> (friend) became <b>maitrī</b> (loving-kindness), then <b>Maitreya, the future Buddha</b>, who crossed China into Korea as <b>Mireuk</b> and Japan as <b>Miroku</b>. Korea's most famous sculpture, the seventh-century <a href="https://en.wikipedia.org/wiki/Gilt-bronze_Maitreya_in_Meditation_(National_Treasure_No._83)">Gilt-bronze Pensive Bodhisattva</a>, <i>is</i> Mireuk. Silla's hwarang warriors believed themselves his incarnations.</p>
-          <p>Miro also has two unrelated lives of its own: a common Finnish given name, and a Slavic short form from <b>mir, "peace, world."</b> Joan Miró adds the art association for free.</p>
-        </div>
-        <div class="chain" aria-label="Mitra to Maitreya to Mireuk and Miroku to Miro">
-          <div class="tok"><span class="glyph">मित्र</span><span class="rom">mitra</span><span class="where">friend</span></div>
-          <div class="link" aria-hidden="true"></div>
-          <div class="tok"><span class="glyph">मैत्रेय</span><span class="rom">Maitreya</span><span class="where">future buddha</span></div>
-          <div class="link" aria-hidden="true"></div>
-          <div class="tok"><span class="glyph">미륵</span><span class="rom">Mireuk</span><span class="where">Korea</span></div>
-          <div class="tok"><span class="glyph">弥勒</span><span class="rom">Miroku</span><span class="where">Japan</span></div>
-          <div class="link" aria-hidden="true"></div>
-          <div class="tok dest"><span class="glyph">Miro</span><span class="rom">peace · world</span><span class="where">Slavic / Finnish</span></div>
-        </div>
-      </div>
-      <aside class="rail">
-        <dl>
-          <dt>US births / yr</dt><dd>~23 · flat · <em>rarest of the finalists</em></dd>
-          <dt>Gender read</dt><dd>M-leaning; at this rarity the kid defines it</dd>
-          <dt>Short form</dt><dd>Already the short form · two syllables, done</dd>
-          <dt>Risk screen</dt><dd>Cleanest on the list · Miro app = office joke at worst · occasional Milo mix-up</dd>
-        </dl>
-        <p class="verdict"><b>Verdict:</b> the traveler. It nails the Milo and Arlo sound exactly, and the Korean chapter of its story is documented history.</p>
-      </aside>
-    </article>
+      <article class="card reveal">
+        <p class="tag">Sanskrit</p>
+        <h3>Bodhi <span class="script">बोधि</span></h3>
+        <p class="say">BOH-dee · "awakening"</p>
+        <p class="ety">From the root budh, to wake: <a href="https://www.wisdomlib.org/definition/bodhi">bodhi</a> is <b>the awakening itself</b>, and the fig tree at Bodh Gaya under which it happened is the bodhi tree.</p>
+        <p class="facts">US #265 boys · Australia top 100 · M-leaning · <em>already short</em></p>
+        <p class="watch"><b>watch:</b> the popularity is the caveat</p>
+      </article>
 
-    <!-- ARUNI -->
-    <article class="finalist reveal">
-      <div>
-        <p class="rank">Finalist · 03</p>
-        <h3 class="name">Aruni <span>अरुणि · ah-ROO-nee</span></h3>
-        <p class="epithet">The first empiricist, at dawn</p>
-        <div class="story">
-          <p>The oldest science story on this page. <b>Uddālaka Āruṇi</b>, in the <a href="https://en.wikisource.org/wiki/Sacred_Books_of_the_East/Volume_1">Chāndogya Upaniṣad</a> (around the 8th century BCE), teaches his son by <b>demonstration</b>. Salt dissolved overnight in water: invisible, yet taste anywhere and it is there. The Indologist Walter Ruben ranked him among the earliest natural philosophers on record.</p>
-          <p>The name comes from <b>aruṇa, dawn-red</b>: Aruṇa is the crimson charioteer who pulls the sun into the sky. No US birth record has ever listed it, yet it sounds like a neighbor of Aria and Luna.</p>
-        </div>
-      </div>
-      <aside class="rail">
-        <dl>
-          <dt>US births / yr</dt><dd>0 recorded, ever · <em>completely unique</em></dd>
-          <dt>Gender read</dt><dd>Unisex in India &amp; Nepal · F in Sri Lanka</dd>
-          <dt>Short form</dt><dd><em>Aru</em> or <em>Runi</em> · both built in</dd>
-          <dt>Risk screen</dt><dd>Permanent spell-it-out name · one pronunciation coach per stranger</dd>
-        </dl>
-        <p class="verdict"><b>Verdict:</b> the origin story. If the science story matters most to us, nobody else will ever have this name.</p>
-      </aside>
-    </article>
-  </section>
+      <article class="card reveal">
+        <p class="tag">Sanskrit</p>
+        <h3>Indra <span class="script">इन्द्र</span></h3>
+        <p class="say">IN-drah · king of the Vedic gods</p>
+        <p class="ety"><a href="https://www.wisdomlib.org/definition/indra">Indra</a> wields the thunderbolt and commands the storm. Buddhism kept him and hung a metaphor on his palace: <b>Indra's net</b>, a lattice of jewels in which every jewel reflects all the others, the Huayan school's image of interdependence and a favorite of writers connecting Buddhism and physics.</p>
+        <p class="facts">~25 US births, split M/F · Indra Nooyi as professional precedent</p>
+        <p class="watch"><b>watch:</b> gender expectations differ by region; Indira confusion</p>
+      </article>
 
-  <!-- ============ WILDCARDS ============ -->
-  <section id="wildcards">
-    <div class="sec-head reveal">
-      <p class="eyebrow">The wildcards</p>
-      <h2>Bolder, quieter, riskier</h2>
-    </div>
-    <div class="wild-grid">
-      <div class="wild reveal">
-        <h3 class="name">Zen <span>禅 · ध्यान</span></h3>
-        <p class="epithet">The famous journey itself</p>
-        <p>The 1,500-year chain from the top of this page, worn as a name: <b>dhyāna, jhāna, chán, sŏn, zen</b>. One syllable, meaning intact, gender-flexible.</p>
-        <p class="stat">277 US births/yr · at the top-1000 doorstep · <em>reads a little on-the-nose</em></p>
-      </div>
-      <div class="wild reveal">
-        <h3 class="name">Meru <span>सुमेरु · 수미산</span></h3>
-        <p class="epithet">The mountain the stars turn around</p>
-        <p>The axial peak of Buddhist cosmology, <b>Sumeru</b> or "wondrous Meru," carried into Japanese as <b>Shumisen</b> and Korean as <b>Sumisan</b>. The still center of a turning universe.</p>
-        <p class="stat">0 recorded US births · boldest pick · <em>expect "did you invent it?"</em></p>
-      </div>
-      <div class="wild reveal">
-        <h3 class="name">Reva <span>रेवा · RAY-vah</span></h3>
-        <p class="epithet">The leaping river</p>
-        <p>An old Sanskrit name of the <b>Narmadā</b>, "she who leaps." A real river name with a modern sound, next door to Nova and Ava.</p>
-        <p class="stat">63 US births/yr · flat for a decade · <em>zero spike risk</em> · F-leaning</p>
-      </div>
-    </div>
-  </section>
+      <article class="card reveal">
+        <p class="tag">Sanskrit · <em>everywhere south and east</em></p>
+        <h3>Jaya <span class="script">जय</span></h3>
+        <p class="say">JAY-ah or JAH-yah · "victory"</p>
+        <p class="ety">From the root ji, to win. Few words traveled further: Jakarta began as <b>Jayakarta, "complete victory,"</b> and the Buddhist king <a href="https://en.wikipedia.org/wiki/Jayavarman_VII">Jayavarman VII</a>, "protected by <a href="https://www.wisdomlib.org/definition/jaya">jaya</a>," built Angkor's Bayon. Feminine in India, masculine across much of Southeast Asia, so it lands neutral.</p>
+        <p class="facts">not in US top 1000 · genuinely unisex across regions · <em>already short</em></p>
+        <p class="watch"><b>watch:</b> two natural pronunciations; pick one and coach it</p>
+      </article>
 
-  <!-- ============ GRAVEYARD ============ -->
-  <section id="graveyard">
-    <div class="sec-head reveal">
-      <p class="eyebrow">Full disclosure</p>
-      <h2>Beautiful, but no</h2>
-      <p>Every candidate we loved, and what killed it. Each entry earned its cause of death.</p>
-    </div>
-    <div class="grave-grid">
-      <div class="grave reveal"><span class="n">Kai</span><p><span class="why">too common</span>US&nbsp;#93, Victoria&nbsp;#32. The sound we want, and everyone already has it.</p></div>
-      <div class="grave reveal"><span class="n">Bodhi</span><p><span class="why">too common</span>US&nbsp;#265, Australia top-100. The obvious Buddhist pick, and therefore gone.</p></div>
-      <div class="grave reveal"><span class="n">Nara</span><p><span class="why">story collapsed</span>Best pure sound of the lot, but the Japanese city's name is a homophone rather than Sanskrit, and Nara Smith is spiking it (births doubled from 2023 to 2024).</p></div>
-      <div class="grave reveal"><span class="n">Soma</span><p><span class="why">collision</span>The Vedic moon elixir loses to <b>Brave New World's</b> drug, which is assigned in high school, and to a real prescription pill.</p></div>
-      <div class="grave reveal"><span class="n">Anu</span><p><span class="why">schoolyard fatal</span>Kaṇāda's word for <b>atom</b>, and one letter from disaster. The playground always finds it.</p></div>
-      <div class="grave reveal"><span class="n">Kanad</span><p><span class="why">collision</span>Founder of <a href="https://archive.org/details/thevaiasesikasut00kanauoft">atomism</a>, possibly before Democritus, spelled "Canada" in eleven languages.</p></div>
-      <div class="grave reveal"><span class="n">Yukti</span><p><span class="why">pronunciation</span>"Reasoning," from the same root as yoga: the yoking together of ideas. English mouths make it "YUCK-tee."</p></div>
-      <div class="grave reveal"><span class="n">Veda</span><p><span class="why">discovered</span>Literally "knowledge," already at US&nbsp;#692 and climbing for twenty years straight.</p></div>
-      <div class="grave reveal"><span class="n">Sumi</span><p><span class="why">homophone</span>The Sumeru link is a pun rather than an etymology, and "sue me" writes itself.</p></div>
-      <div class="grave reveal"><span class="n">Sachi</span><p><span class="why">homophone</span>Japanese "happiness" and Sanskrit "eloquence" turned out to be a lovely coincidence with no transmission behind it.</p></div>
-      <div class="grave reveal"><span class="n">Setsuna</span><p><span class="why">connotation</span>क्षण kṣaṇa, "an instant," genuinely became 刹那 setsuna, but it sits next to <i>setsunai</i>, "heartache," and reads anime-coded.</p></div>
-      <div class="grave reveal"><span class="n">Sena</span><p><span class="why">collision</span>Korean, Japanese, Turkish and Sanskrit lives, and John Cena airhorns forever.</p></div>
-      <div class="grave reveal"><span class="n">Mitra</span><p><span class="why">reads surname</span>The god who went east as Maitreya and west as Mithras, but it lands as a Bengali surname or a Persian classic.</p></div>
-      <div class="grave reveal"><span class="n">Indra</span><p><span class="why">deity-heavy</span>Indra's net is the favorite metaphor of writers on Buddhism and science, but the name itself reads mythic and gender-scrambled.</p></div>
-      <div class="grave reveal"><span class="n">Kaya</span><p><span class="why">last decade</span>Warm everywhere (Noongar for "hello"), but its US moment was 2005 and <i>Kaia</i> owns the trend now.</p></div>
-      <div class="grave reveal"><span class="n">Tara</span><p><span class="why">generation off</span>"Star," "she who carries across," the goddess born of a compassionate tear. Also a Gen-X mum name in both countries. <b>→ the shelf</b></p></div>
-      <div class="grave reveal"><span class="n">Nachiketa</span><p><span class="why">schoolyard fatal</span>The boy who refused Death's riches and demanded truth, but "Nachi" fails the cafeteria badly. <b>→ the shelf</b></p></div>
-    </div>
-  </section>
+      <article class="card reveal">
+        <p class="tag">Hawaiian / Japanese / Scandinavian</p>
+        <h3>Kai</h3>
+        <p class="say">KY · "sea" (Hawaiian)</p>
+        <p class="ety">Not Sanskrit: Hawaiian for sea, a Japanese given name, a Scandinavian short form. On this page because it defines <b>the sound the shortlist competes with</b>.</p>
+        <p class="facts">US #93 boys · Victoria #32 · M-leaning · <em>already short</em></p>
+        <p class="watch"><b>watch:</b> several per classroom by 2030</p>
+      </article>
 
-  <!-- ============ SHELF ============ -->
-  <section id="shelf">
-    <div class="shelf reveal">
-      <h3>The middle-name shelf</h3>
-      <p>Names too heavy or too storied for first-name duty. One slot back, a name can be all meaning and no logistics.</p>
-      <ul>
-        <li><span class="n">Nachiketa</span><p>The boy who <a href="https://en.wikisource.org/wiki/Sacred_Books_of_the_East/Volume_15/Katha-upanishad">waited at Death's door</a> and refused every treasure for one true answer. A family motto, hidden in the middle.</p></li>
-        <li><span class="n">Tara</span><p>Star, and "she who carries across": the guide over the ocean of saṃsāra.</p></li>
-        <li><span class="n">Saryu</span><p>A river from the family's old map, flowing past Ayodhya. It says where we began without announcing it.</p></li>
-      </ul>
+      <article class="card reveal">
+        <p class="tag">Sanskrit</p>
+        <h3>Kavi <span class="script">कवि</span></h3>
+        <p class="say">KUH-vee · "seer-poet"</p>
+        <p class="ety">In the <a href="https://en.wikisource.org/wiki/The_Rig_Veda">Ṛgveda</a> a <a href="https://www.wisdomlib.org/definition/kavi">kavi</a> is a seer before he is a poet: the sage who perceives <b>ṛta, the hidden order of the cosmos</b>, and puts it into words. The closest Sanskrit comes to one word for looking at the world and seeing what is actually there.</p>
+        <p class="facts">66 US births 2024, rising · 92% M in use; American Girl's 2023 Girl of the Year is Kavi Sharma · <em>already short</em></p>
+        <p class="watch"><b>watch:</b> cavity jokes; KAH/KAY vowel coaching</p>
+      </article>
+
+      <article class="card reveal">
+        <p class="tag">Sanskrit / Japanese / Turkish / Hopi / Noongar</p>
+        <h3>Kaya <span class="script">काय</span></h3>
+        <p class="say">KY-ah</p>
+        <p class="ety">In Buddhist philosophy <a href="https://www.wisdomlib.org/definition/kaya">kāya</a> is "body," as in <b>dharmakāya, the truth-body of a buddha</b>. The same sound is separately a Japanese tree name, Turkish for rock, Hopi for elder sister, and a Noongar greeting in southwest Australia.</p>
+        <p class="facts">268 US girls 2024, drifting down from a 2005 peak · F-leaning</p>
+        <p class="watch"><b>watch:</b> Kaia is the spelling currently in fashion</p>
+      </article>
+
+      <article class="card reveal">
+        <p class="tag">Sanskrit · <em>via all of Buddhist Asia</em></p>
+        <h3>Meru <span class="script">मेरु</span></h3>
+        <p class="say">MAY-roo · the world-mountain</p>
+        <p class="ety">The axial mountain of Buddhist cosmology, usually <a href="https://www.wisdomlib.org/definition/sumeru">Sumeru</a>, "wondrous Meru," around which <b>the sun, moon and stars were said to circle</b>. It crossed into Japanese as Shumisen and Korean as Sumisan.</p>
+        <p class="facts">no recorded US births · no established gender anywhere · <em>already short</em></p>
+        <p class="watch"><b>watch:</b> rhymes with Peru; expect "did you invent it?"</p>
+      </article>
+
+      <article class="card reveal">
+        <p class="tag">Sanskrit · <em>via Korea &amp; Japan</em> · also Slavic/Finnish</p>
+        <h3>Miro <span class="script">미륵 · 弥勒</span></h3>
+        <p class="say">MEE-roh · from "loving-kindness"</p>
+        <p class="ety">Sanskrit mitra (friend) grew into maitrī (loving-kindness) and then <a href="https://www.wisdomlib.org/definition/maitreya">Maitreya</a>, the future Buddha, who crossed China into Korean <b>Mireuk</b> and Japanese <b>Miroku</b>. Korea's seventh-century <a href="https://en.wikipedia.org/wiki/Gilt-bronze_Maitreya_in_Meditation_(National_Treasure_No._83)">Gilt-bronze Pensive Bodhisattva</a> is Mireuk. Unrelated but real: Miro is a common Finnish name and a Slavic short form of mir, "peace, world."</p>
+        <p class="facts">~23 US births · M-leaning · <em>already the short form</em></p>
+        <p class="watch"><b>watch:</b> the Miro whiteboard app; Milo mix-ups</p>
+      </article>
+
+      <article class="card reveal">
+        <p class="tag">Sanskrit · <em>traveled west too</em></p>
+        <h3>Mitra <span class="script">मित्र</span></h3>
+        <p class="say">MEE-trah · "friend, covenant"</p>
+        <p class="ety">From an old Indo-Iranian word for "that which binds": <a href="https://www.wisdomlib.org/definition/mitra">Mitra</a> is the <b>god of pacts and friendship</b>, first written down in a treaty around 1400 BCE. He went west as Persian Mithra and Roman Mithras while his root traveled east inside Maitreya. A common feminine name in Iran today.</p>
+        <p class="facts">10 US births 2024, all girls</p>
+        <p class="watch"><b>watch:</b> reads as a Bengali surname to many Indians</p>
+      </article>
+
+      <article class="card reveal">
+        <p class="tag">Sanskrit</p>
+        <h3>Nachiketa <span class="script">नचिकेत</span></h3>
+        <p class="say">nuh-chi-KAY-tuh</p>
+        <p class="ety">The boy of the <a href="https://en.wikisource.org/wiki/Sacred_Books_of_the_East/Volume_15/Katha-upanishad">Kaṭha Upaniṣad</a> who waited three days at Death's door, was offered wealth, herds and long life, and <b>refused everything except the answer to what happens after death</b>. Yama, Death himself, finally taught him.</p>
+        <p class="facts">no recorded US births · M in India · <em>short: Keta</em></p>
+        <p class="watch"><b>watch:</b> the natural short form Nachi invites nacho jokes and worse mishearings</p>
+      </article>
+
+      <article class="card reveal">
+        <p class="tag">Sanskrit · <em>the Japan link is coincidence</em></p>
+        <h3>Nara <span class="script">नर</span></h3>
+        <p class="say">NAH-rah · "human being"</p>
+        <p class="ety">Sanskrit <a href="https://www.wisdomlib.org/definition/nara">nara</a> is the human being, and Nārāyaṇa, "he who rests on the waters," is <b>Vishnu on the cosmic ocean</b>. The Japanese city of Nara, for all its Buddhist history, most likely takes its name from a native word for flattened land; the match is homophony, and Korean nara, "country," is likewise its own word.</p>
+        <p class="facts">72 US girls 2024, doubling year on year · F in US use</p>
+        <p class="watch"><b>watch:</b> the influencer Nara Smith is spiking it; recheck the May 2027 data</p>
+      </article>
+
+      <article class="card reveal">
+        <p class="tag">Sanskrit · <em>via Tibet</em></p>
+        <h3>Pema <span class="script">པདྨ</span></h3>
+        <p class="say">PEH-mah · "lotus"</p>
+        <p class="ety">The Tibetan pronunciation of <a href="https://www.wisdomlib.org/definition/padma">padma</a>, the lotus: the flower that <b>roots in mud and opens clean</b>, Buddhism's oldest image of awakening. Pema Chödrön gave the name a familiar American face.</p>
+        <p class="facts">10 US births 2024, all girls · <em>already short</em></p>
+        <p class="watch"><b>watch:</b> the first syllable is easy fuel for six-year-olds</p>
+      </article>
+
+      <article class="card reveal">
+        <p class="tag">Sanskrit</p>
+        <h3>Reva <span class="script">रेवा</span></h3>
+        <p class="say">RAY-vah · "she who leaps"</p>
+        <p class="ety">An epithet of the <a href="https://www.wisdomlib.org/definition/narmada">Narmadā</a>, one of India's seven sacred rivers, from a root meaning <b>to leap or bound</b>. A river name with a modern sound, next door to Nova and Ava.</p>
+        <p class="facts">63 US girls 2024, flat for a decade · F-leaning · <em>already short</em></p>
+        <p class="watch"><b>watch:</b> little; a minor Star Wars character shares it</p>
+      </article>
+
+      <article class="card reveal">
+        <p class="tag">Sanskrit</p>
+        <h3>Saryu <span class="script">सरयू</span></h3>
+        <p class="say">SUH-ryoo · a river of the Ṛgveda</p>
+        <p class="ety">The river of Ayodhya, named in the <a href="https://en.wikisource.org/wiki/The_Rig_Veda">Ṛgveda</a> as <a href="https://www.wisdomlib.org/definition/sarayu">Sarayu</a>, from the root sṛ, <b>to flow</b>. A quiet geography note from one side of the family.</p>
+        <p class="facts">essentially unused in the US · F-leaning in India</p>
+        <p class="watch"><b>watch:</b> stress varies in English mouths; Sarayu is the more self-pronouncing spelling</p>
+      </article>
+
+      <article class="card reveal">
+        <p class="tag">Sanskrit / Korean / Japanese / Turkish</p>
+        <h3>Sena <span class="script">सेना</span></h3>
+        <p class="say">SAY-nah</p>
+        <p class="ety">Sanskrit <a href="https://www.wisdomlib.org/definition/sena">senā</a> is "army." The same sound lives independently as a <b>Korean girls' name, a Japanese given name, and a Turkish name</b> from Arabic thanāʾ, "praise." Ayrton Senna is the glamorous near miss.</p>
+        <p class="facts">60 US births 2024, mostly girls · <em>already short</em></p>
+        <p class="watch"><b>watch:</b> John Cena memes; cena is "dinner" in Spanish</p>
+      </article>
+
+      <article class="card reveal">
+        <p class="tag">Sanskrit · <em>via Japan</em></p>
+        <h3>Setsuna <span class="script">刹那</span></h3>
+        <p class="say">seh-tsoo-nah · "an instant"</p>
+        <p class="ety">Sanskrit <a href="https://www.wisdomlib.org/definition/kshana">kṣaṇa</a>, the Abhidharma's smallest unit of time, roughly <b>a seventy-fifth of a second</b>, was spelled into Chinese as 刹那 and read in Japanese as setsuna. The teaching attached to it: live fully even inside the briefest flicker.</p>
+        <p class="facts">rare everywhere · anime-coded in Japan · <em>short: Setsu</em></p>
+        <p class="watch"><b>watch:</b> one sound from setsunai, "heartache"</p>
+      </article>
+
+      <article class="card reveal">
+        <p class="tag">Sanskrit · Greek homograph</p>
+        <h3>Soma <span class="script">सोम</span></h3>
+        <p class="say">SOH-mah · the moon-elixir</p>
+        <p class="ety">The pressed elixir and moon of the Ṛgveda; <a href="https://en.wikisource.org/wiki/The_Rig_Veda">the entire ninth book</a> is <a href="https://www.wisdomlib.org/definition/soma">soma</a> hymns. Unrelated Greek sōma, "body," gives biology <b>the soma of a neuron</b>, and Sōma is separately a current Japanese boys' name.</p>
+        <p class="facts">~19 US births 2024, split M/F · <em>already short</em></p>
+        <p class="watch"><b>watch:</b> Brave New World's drug is assigned reading, and Soma is a prescription muscle relaxant</p>
+      </article>
+
+      <article class="card reveal">
+        <p class="tag">Japanese / Korean · <em>the Sumeru echo is coincidence</em></p>
+        <h3>Sumi</h3>
+        <p class="say">SOO-mee</p>
+        <p class="ety">Japanese Sumi is written with characters for <b>clarity, or for ink</b> (sumi-e is ink-wash painting); Korean Sumi is its own name again. The echo of <a href="https://www.wisdomlib.org/definition/sumeru">Sumeru's</a> first syllable is a pun, not a lineage.</p>
+        <p class="facts">near zero US births · F-leaning · <em>already short</em></p>
+        <p class="watch"><b>watch:</b> "sue me"</p>
+      </article>
+
+      <article class="card reveal">
+        <p class="tag">Sanskrit · <em>via Tibet</em> · also Irish</p>
+        <h3>Tara <span class="script">तारा</span></h3>
+        <p class="say">TAH-rah · "star; she who carries across"</p>
+        <p class="ety">From tṝ, to cross: <a href="https://www.wisdomlib.org/definition/tara">tārā</a> is the star that guides and the <b>saviouress who ferries beings over the ocean of saṃsāra</b>. In legend she was born from a tear of Avalokiteśvara. The Irish royal Hill of Tara is unrelated but adds a western foothold.</p>
+        <p class="facts">247 US girls 2024, just out of the top 1000 after decades inside · F</p>
+        <p class="watch"><b>watch:</b> reads as a parent-generation name in the US and Australia</p>
+      </article>
+
+      <article class="card reveal">
+        <p class="tag">Sanskrit · <em>via Bali</em></p>
+        <h3>Tirta</h3>
+        <p class="say">TEER-tah · "sacred crossing"</p>
+        <p class="ety">Sanskrit <a href="https://www.wisdomlib.org/definition/tirtha">tīrtha</a> is a ford: the shallow place where you can cross a river, and by extension every pilgrimage site where the ordinary <b>crosses toward the sacred</b>. In Bali tirta is holy water itself, as at the spring temple <a href="https://en.wikipedia.org/wiki/Tirta_Empul">Tirta Empul</a>.</p>
+        <p class="facts">used in Indonesia · rare in the US · <em>already short</em></p>
+        <p class="watch"><b>watch:</b> English speakers may flatten it to TUR-ta</p>
+      </article>
+
+      <article class="card reveal">
+        <p class="tag">Sanskrit</p>
+        <h3>Veda <span class="script">वेद</span></h3>
+        <p class="say">VAY-dah · "knowledge"</p>
+        <p class="ety">From vid, to know, cognate with Latin videre and English wit: <a href="https://www.wisdomlib.org/definition/veda">veda</a> is <b>knowledge itself</b>, and the name of the oldest Indian scriptures.</p>
+        <p class="facts">US #692 girls, climbing for twenty years · F in US use · <em>already short</em></p>
+        <p class="watch"><b>watch:</b> already discovered; carries scriptural weight</p>
+      </article>
+
+      <article class="card reveal">
+        <p class="tag">Sanskrit</p>
+        <h3>Yukti <span class="script">युक्ति</span></h3>
+        <p class="say">YOOK-tee · "reasoning"</p>
+        <p class="ety">From yuj, to yoke, the same root as yoga: <a href="https://www.wisdomlib.org/definition/yukti">yukti</a> is reasoning as <b>the yoking-together of ideas</b>, a technical term for logical method in Indian philosophy and Ayurveda.</p>
+        <p class="facts">F in India · rare in the US · <em>short: Yuki</em></p>
+        <p class="watch"><b>watch:</b> English mouths drift to "YUCK-tee"</p>
+      </article>
+
+      <article class="card reveal">
+        <p class="tag">Sanskrit · <em>via China, Korea &amp; Japan</em></p>
+        <h3>Zen <span class="script">禅</span></h3>
+        <p class="say">ZEN · from "meditative absorption"</p>
+        <p class="ety">Sanskrit <a href="https://www.wisdomlib.org/definition/dhyana">dhyāna</a> became Pali jhāna, was spelled into Chinese as 禪那 chánnà and clipped to chán, crossed to Korea as Sŏn and to Japan as Zen. The name is <b>one syllable of a 1,500-year journey</b>.</p>
+        <p class="facts">277 US births 2024, near the top-1000 doorstep · M-leaning · <em>already short</em></p>
+        <p class="watch"><b>watch:</b> reads as a word name; "so zen" jokes</p>
+      </article>
+
+      <article class="card reveal">
+        <p class="tag">Sanskrit · <em>via Burma</em></p>
+        <h3>Zeya <span class="script">ဇေယျ</span></h3>
+        <p class="say">ZAY-yah · "victory"</p>
+        <p class="ety">The Burmese form of <a href="https://www.wisdomlib.org/definition/jaya">jaya</a> through Pali jeyya, a standard element of <b>Burmese royal and personal names</b> for centuries. The same victory that named Jakarta, wearing a Burmese sound.</p>
+        <p class="facts">rare in the US · unisex-leaning sound · <em>already short</em></p>
+        <p class="watch"><b>watch:</b> stress varies; ZAY-ah vs zeh-YAH</p>
+      </article>
+
     </div>
   </section>
 
@@ -508,7 +487,7 @@ footer .meta{font-family:var(--mono);font-size:.68rem;color:var(--dim);margin-to
 <footer>
   <div class="wrap">
     <p class="trivia">One last proof that words travel: <a href="https://global.canon/en/news/2014/sep02e.html"><b>Canon cameras are named for Kannon</b></a>, the Japanese form of Avalokiteśvara. Compassion itself, arrived in Japan and then in your pocket. A good name goes far.</p>
-    <p class="meta">Original reading: <a href="https://en.wikisource.org/wiki/Sacred_Books_of_the_East/Volume_1">Chāndogya Upaniṣad, tr. Max Müller 1879</a> (the salt teaching, book VI) · <a href="https://en.wikisource.org/wiki/Sacred_Books_of_the_East/Volume_15/Katha-upanishad">Kaṭha Upaniṣad, tr. Müller</a> (Nachiketa) · <a href="https://en.wikisource.org/wiki/The_Rig_Veda">Ṛgveda, tr. Griffith 1896</a> · <a href="https://archive.org/details/thevaiasesikasut00kanauoft">Vaiśeṣika Sūtras of Kaṇāda, tr. Sinha 1923</a> · <a href="https://www.sanskrit-lexicon.uni-koeln.de/">Monier-Williams Sanskrit lexicon</a> · <a href="https://www.ssa.gov/oact/babynames/">SSA baby-name data</a> · <a href="https://www.bdm.vic.gov.au/popular-baby-names-victoria-2025">Victoria BDM 2025</a> · <a href="https://global.canon/en/news/2014/sep02e.html">Canon on Kwanon, 2014</a><br>Researched July 2026 · teasing screen across English, Spanish, Arabic, Mandarin, Korean, Japanese &amp; Hindi<br>ध्यान · 禪 · 선 · 禅 · made with love, for a small person arriving 2027</p>
+    <p class="meta">Original reading: <a href="https://en.wikisource.org/wiki/Sacred_Books_of_the_East/Volume_1">Chāndogya Upaniṣad, tr. Max Müller 1879</a> (the salt teaching, book VI) · <a href="https://en.wikisource.org/wiki/Sacred_Books_of_the_East/Volume_15/Katha-upanishad">Kaṭha Upaniṣad, tr. Müller</a> (Nachiketa) · <a href="https://en.wikisource.org/wiki/The_Rig_Veda">Ṛgveda, tr. Griffith 1896</a> · <a href="https://archive.org/details/thevaiasesikasut00kanauoft">Vaiśeṣika Sūtras of Kaṇāda, tr. Sinha 1923</a> · <a href="https://www.wisdomlib.org/">wisdomlib Sanskrit lexica</a> (incl. Monier-Williams) · <a href="https://www.sanskrit-lexicon.uni-koeln.de/">Cologne Sanskrit lexicon</a> · <a href="https://www.ssa.gov/oact/babynames/">SSA baby-name data</a> · <a href="https://www.bdm.vic.gov.au/popular-baby-names-victoria-2025">Victoria BDM 2025</a> · <a href="https://global.canon/en/news/2014/sep02e.html">Canon on Kwanon, 2014</a><br>Researched July 2026 · teasing screen across English, Spanish, Arabic, Mandarin, Korean, Japanese &amp; Hindi<br>ध्यान · 禪 · 선 · 禅 · made with love, for a small person arriving 2027</p>
   </div>
 </footer>
 
