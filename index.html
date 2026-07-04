@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A Name That Traveled — a naming dossier</title>
+<meta name="description" content="Criteria, research, and every candidate name for a child arriving 2027 — Sanskrit roots, Buddhist journeys, schoolyard-tested.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Eczar:wght@400;500;600;700&family=Work+Sans:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@500&display=swap&text=%E7%A6%AA%E7%A6%85%E5%BD%8C%E5%8B%92%E5%BC%A5%E9%A0%88%E5%B1%B1%E5%88%B9%E9%82%A3%E7%9C%9E" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@500&display=swap&text=%EC%84%A0%EB%AF%B8%EB%A5%B5%EC%88%98%EC%82%B0" rel="stylesheet">
+<style>
+:root{
+  --night:#16142e;
+  --card:#201d42;
+  --card-edge:rgba(154,147,196,.22);
+  --dawn:#f26545;
+  --saffron:#e9a23b;
+  --moon:#f3eddf;
+  --dusk:#9a93c4;
+  --dim:#6d67a0;
+  --serif:"Eczar","Noto Serif JP","Noto Serif KR",serif;
+  --sans:"Work Sans",system-ui,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,monospace;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  background:var(--night);
+  color:var(--moon);
+  font-family:var(--sans);
+  font-size:16px;
+  line-height:1.65;
+  -webkit-font-smoothing:antialiased;
+}
+::selection{background:var(--dawn);color:var(--night)}
+a{color:var(--saffron)}
+a:focus-visible,button:focus-visible{outline:2px solid var(--saffron);outline-offset:3px;border-radius:2px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 24px}
+
+/* ---------- hero ---------- */
+.hero{
+  position:relative;
+  padding:9rem 0 7rem;
+  overflow:hidden;
+  border-bottom:1px solid var(--card-edge);
+}
+.hero .stars{
+  position:absolute;inset:0;pointer-events:none;opacity:.8;
+}
+.hero .stars i{
+  position:absolute;width:2px;height:2px;border-radius:50%;
+  background:var(--moon);opacity:.5;
+}
+.hero::after{
+  content:"";position:absolute;left:0;right:0;bottom:0;height:46%;
+  background:linear-gradient(180deg,transparent 0%,rgba(242,101,69,.07) 45%,rgba(242,101,69,.16) 78%,rgba(233,162,59,.22) 100%);
+  pointer-events:none;
+}
+.hero .wrap{position:relative;z-index:2}
+.eyebrow{
+  font-family:var(--mono);font-size:.72rem;letter-spacing:.22em;
+  text-transform:uppercase;color:var(--saffron);
+}
+.eyebrow::before{content:"— ";color:var(--dawn)}
+.hero h1{
+  font-family:var(--serif);font-weight:600;
+  font-size:clamp(2.6rem,6.5vw,4.6rem);
+  line-height:1.08;margin:1.1rem 0 1.2rem;letter-spacing:-.01em;
+}
+.hero h1 em{font-style:normal;color:var(--dawn)}
+.hero .lede{max-width:34rem;color:var(--dusk);font-size:1.05rem}
+.hero .lede strong{color:var(--moon);font-weight:500}
+
+/* ---------- transmission chain ---------- */
+.chain-label{
+  font-family:var(--mono);font-size:.72rem;letter-spacing:.18em;
+  text-transform:uppercase;color:var(--dim);margin:3.2rem 0 1.1rem;
+}
+.chain{
+  display:flex;align-items:stretch;flex-wrap:wrap;gap:.35rem 0;
+}
+.tok{
+  display:flex;flex-direction:column;align-items:center;
+  min-width:5.2rem;padding:.2rem .5rem;text-align:center;
+}
+.tok .glyph{
+  font-family:var(--serif);font-size:2rem;line-height:1.25;color:var(--moon);
+}
+.tok .rom{font-family:var(--mono);font-size:.72rem;color:var(--saffron);margin-top:.3rem}
+.tok .where{font-family:var(--mono);font-size:.62rem;color:var(--dim);letter-spacing:.08em;text-transform:uppercase;margin-top:.15rem}
+.tok.dest .glyph{color:var(--dawn)}
+.link{
+  flex:1 1 2rem;min-width:1.6rem;position:relative;align-self:center;height:1px;
+  border-top:1px dashed var(--dim);margin-top:-1.6rem;
+}
+.link::after{
+  content:"›";position:absolute;right:-2px;top:-.85em;
+  color:var(--dim);font-size:.85rem;font-family:var(--mono);
+}
+/* hero chain entrance */
+@media (prefers-reduced-motion:no-preference){
+  .hero .tok,.hero .link{opacity:0;transform:translateY(8px);animation:rise .7s ease forwards}
+  .hero .tok:nth-child(1){animation-delay:.3s}
+  .hero .link:nth-child(2){animation-delay:.75s}
+  .hero .tok:nth-child(3){animation-delay:.95s}
+  .hero .link:nth-child(4){animation-delay:1.4s}
+  .hero .tok:nth-child(5){animation-delay:1.6s}
+  .hero .link:nth-child(6){animation-delay:2.05s}
+  .hero .tok:nth-child(7){animation-delay:2.25s}
+  .hero .tok.dest{animation-delay:2.7s}
+  @keyframes rise{to{opacity:1;transform:none}}
+  .reveal{opacity:0;transform:translateY(16px);transition:opacity .7s ease,transform .7s ease}
+  .reveal.in{opacity:1;transform:none}
+}
+.chain-note{font-size:.85rem;color:var(--dim);margin-top:1.2rem;max-width:34rem}
+
+/* ---------- sections ---------- */
+section{padding:5.5rem 0 0}
+.sec-head{margin-bottom:2.2rem}
+.sec-head h2{
+  font-family:var(--serif);font-weight:600;font-size:clamp(1.7rem,3.4vw,2.4rem);
+  margin-top:.5rem;line-height:1.15;
+}
+.sec-head p{color:var(--dusk);max-width:38rem;margin-top:.6rem}
+
+/* brief */
+.families{
+  display:flex;flex-wrap:wrap;gap:.6rem 2.2rem;align-items:baseline;
+  font-family:var(--serif);font-size:1.15rem;color:var(--moon);
+  padding:1.2rem 0 1.8rem;border-bottom:1px dashed var(--card-edge);margin-bottom:2rem;
+}
+.families .x{color:var(--dawn);font-size:1rem;font-family:var(--mono)}
+.families small{display:block;font-family:var(--mono);font-size:.68rem;color:var(--dim);letter-spacing:.12em;text-transform:uppercase;margin-top:.1rem}
+.crit-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1rem}
+.crit{
+  border:1px solid var(--card-edge);border-radius:12px;padding:1.3rem 1.4rem;
+  background:linear-gradient(160deg,var(--card),rgba(32,29,66,.4));
+}
+.crit .k{font-family:var(--serif);font-size:1.12rem;font-weight:500;color:var(--saffron)}
+.crit p{font-size:.92rem;color:var(--dusk);margin-top:.4rem}
+.crit p b{color:var(--moon);font-weight:500}
+
+/* method strip */
+.passes{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1rem}
+.pass{border-left:2px solid var(--dawn);padding:.2rem 0 .2rem 1.1rem}
+.pass .k{font-family:var(--mono);font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--saffron)}
+.pass p{font-size:.9rem;color:var(--dusk);margin-top:.35rem}
+
+/* rarity map */
+.map{border:1px solid var(--card-edge);border-radius:14px;background:var(--card);padding:1.8rem 1.6rem 1.2rem;position:relative;overflow:hidden}
+.map .scale-note{font-family:var(--mono);font-size:.68rem;color:var(--dim);margin-bottom:1.4rem}
+.rowchart{position:relative}
+.band{
+  --barcol:calc(100% - 9.5rem - 4.2rem - 1.2rem);
+  position:absolute;top:-0.4rem;bottom:0;
+  left:calc(9.5rem + .6rem + var(--barcol) * .27);
+  width:calc(var(--barcol) * .27);
+  background:rgba(233,162,59,.07);border-left:1px dashed rgba(233,162,59,.5);border-right:1px dashed rgba(233,162,59,.5);
+  pointer-events:none;
+}
+.band span{
+  position:absolute;top:-1.15rem;left:50%;transform:translateX(-50%);
+  font-family:var(--mono);font-size:.62rem;letter-spacing:.14em;color:var(--saffron);text-transform:uppercase;white-space:nowrap;
+}
+.bar-row{display:grid;grid-template-columns:9.5rem 1fr 4.2rem;align-items:center;gap:.6rem;padding:.28rem 0;font-family:var(--mono);font-size:.78rem}
+.bar-row .n{color:var(--dusk);text-align:right;padding-right:.2rem}
+.bar-row.hot .n{color:var(--moon)}
+.bar-row .v{color:var(--dim);font-size:.72rem}
+.bar{height:9px;border-radius:5px;background:var(--dim);opacity:.45;min-width:3px}
+.bar-row.hot .bar{background:linear-gradient(90deg,var(--dawn),var(--saffron));opacity:1}
+.bar-row.zero .bar{background:none;border:1px dashed var(--dim);height:7px}
+.map .legend{font-family:var(--mono);font-size:.66rem;color:var(--dim);margin-top:1.2rem}
+.map .legend b{color:var(--saffron);font-weight:500}
+
+/* finalist cards */
+.rank{
+  font-family:var(--mono);font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;
+  color:var(--dawn);
+}
+.finalist{
+  border:1px solid var(--card-edge);border-radius:16px;background:var(--card);
+  padding:2.2rem 2.2rem 2rem;margin-bottom:1.6rem;
+  display:grid;grid-template-columns:1.55fr 1fr;gap:2.4rem;
+}
+.finalist .name{
+  font-family:var(--serif);font-weight:600;font-size:2.5rem;line-height:1.05;margin:.35rem 0 .1rem;
+}
+.finalist .name span{color:var(--dim);font-weight:400;font-size:1.3rem;margin-left:.6rem}
+.finalist .epithet{font-family:var(--serif);color:var(--saffron);font-size:1.1rem;margin-bottom:1rem}
+.finalist .story{font-size:.95rem;color:var(--dusk)}
+.finalist .story b{color:var(--moon);font-weight:500}
+.finalist .story p+p{margin-top:.7rem}
+.finalist .chain{margin-top:1.4rem;padding-top:1.2rem;border-top:1px dashed var(--card-edge)}
+.finalist .tok .glyph{font-size:1.5rem}
+.finalist .tok{min-width:4.2rem}
+.rail{border-left:1px dashed var(--card-edge);padding-left:1.8rem;align-self:start}
+.rail dl{font-family:var(--mono);font-size:.78rem}
+.rail dt{color:var(--dim);font-size:.64rem;letter-spacing:.16em;text-transform:uppercase;margin-top:1rem}
+.rail dt:first-child{margin-top:0}
+.rail dd{color:var(--moon);margin-top:.2rem}
+.rail dd em{font-style:normal;color:var(--saffron)}
+.verdict{
+  margin-top:1.5rem;padding:.9rem 1rem;border-radius:10px;
+  background:rgba(242,101,69,.09);border:1px solid rgba(242,101,69,.3);
+  font-size:.85rem;color:var(--moon);
+}
+.verdict b{color:var(--dawn);font-weight:600}
+
+/* wildcards */
+.wild-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:1rem}
+.wild{border:1px solid var(--card-edge);border-radius:14px;padding:1.6rem;background:linear-gradient(170deg,var(--card),rgba(32,29,66,.35))}
+.wild .name{font-family:var(--serif);font-weight:600;font-size:1.7rem}
+.wild .name span{color:var(--dim);font-weight:400;font-size:1rem;margin-left:.4rem}
+.wild .epithet{color:var(--saffron);font-family:var(--serif);font-size:.98rem;margin-bottom:.7rem}
+.wild p{font-size:.88rem;color:var(--dusk)}
+.wild p b{color:var(--moon);font-weight:500}
+.wild .stat{font-family:var(--mono);font-size:.7rem;color:var(--dim);margin-top:.9rem;padding-top:.7rem;border-top:1px dashed var(--card-edge)}
+.wild .stat em{font-style:normal;color:var(--saffron)}
+
+/* graveyard */
+.grave-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:.8rem}
+.grave{
+  border:1px solid rgba(154,147,196,.14);border-radius:10px;padding:1rem 1.2rem;
+  display:flex;gap:1rem;align-items:baseline;background:rgba(32,29,66,.35);
+}
+.grave .n{font-family:var(--serif);font-size:1.15rem;font-weight:500;color:var(--dusk);min-width:4.6rem}
+.grave p{font-size:.84rem;color:var(--dim)}
+.grave p b{color:var(--dusk);font-weight:500}
+.grave .why{font-family:var(--mono);font-size:.62rem;letter-spacing:.12em;text-transform:uppercase;color:var(--dawn);display:block;margin-bottom:.15rem}
+
+/* shelf */
+.shelf{border:1px dashed var(--saffron);border-radius:14px;padding:1.8rem 2rem;background:rgba(233,162,59,.05)}
+.shelf h3{font-family:var(--serif);font-size:1.3rem;font-weight:600;color:var(--saffron)}
+.shelf>p{font-size:.9rem;color:var(--dusk);margin-top:.4rem;max-width:40rem}
+.shelf ul{list-style:none;margin-top:1.2rem;display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1rem}
+.shelf .n{font-family:var(--serif);font-size:1.15rem;color:var(--moon)}
+.shelf li p{font-size:.84rem;color:var(--dusk);margin-top:.2rem}
+
+/* footer */
+footer{margin-top:6rem;border-top:1px solid var(--card-edge);padding:2.5rem 0 3.5rem}
+footer .trivia{
+  font-family:var(--serif);font-size:1.05rem;color:var(--dusk);max-width:36rem;
+}
+footer .trivia b{color:var(--saffron);font-weight:500}
+footer .meta{font-family:var(--mono);font-size:.68rem;color:var(--dim);margin-top:1.4rem;line-height:2}
+
+@media (max-width:760px){
+  .hero{padding:5.5rem 0 5rem}
+  .finalist{grid-template-columns:1fr;gap:1.6rem;padding:1.6rem}
+  .rail{border-left:none;border-top:1px dashed var(--card-edge);padding-left:0;padding-top:1.4rem}
+  .bar-row{grid-template-columns:5.4rem 1fr 3.4rem;font-size:.7rem}
+  .band{--barcol:calc(100% - 5.4rem - 3.4rem - 1.2rem);left:calc(5.4rem + .6rem + var(--barcol) * .27)}
+  .grave{flex-direction:column;gap:.3rem}
+  section{padding-top:4rem}
+}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="stars" aria-hidden="true"></div>
+  <div class="wrap">
+    <p class="eyebrow">A naming dossier · child arriving 2027</p>
+    <h1>A name that <em>traveled</em></h1>
+    <p class="lede">Sanskrit at its root, Buddhist in its journey, at home in an American classroom. Below: <strong>our criteria, the research, and every candidate</strong> — etymologies verified link by link, popularity measured against raw birth data, and each name schoolyard-tested without mercy.</p>
+
+    <p class="chain-label">Proof it's possible — one word's 1,500-year journey</p>
+    <div class="chain" aria-label="The word dhyāna traveling from Sanskrit to Japanese Zen">
+      <div class="tok"><span class="glyph">ध्यान</span><span class="rom">dhyāna</span><span class="where">Sanskrit</span></div>
+      <div class="link" aria-hidden="true"></div>
+      <div class="tok"><span class="glyph">jhāna</span><span class="rom">meditation</span><span class="where">Pali</span></div>
+      <div class="link" aria-hidden="true"></div>
+      <div class="tok"><span class="glyph">禪</span><span class="rom">chán</span><span class="where">China</span></div>
+      <div class="link" aria-hidden="true"></div>
+      <div class="tok"><span class="glyph">선</span><span class="rom">sŏn</span><span class="where">Korea</span></div>
+      <div class="tok dest"><span class="glyph">禅</span><span class="rom">zen</span><span class="where">Japan</span></div>
+    </div>
+    <p class="chain-note">The word "Zen" is literally half of a Chinese attempt to spell a Sanskrit sound — the meaning rode inside the pronunciation across four languages. Names can carry both our worlds. Some already have.</p>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <!-- ============ THE BRIEF ============ -->
+  <section id="brief">
+    <div class="sec-head reveal">
+      <p class="eyebrow">The brief</p>
+      <h2>Two lineages, one child, six rules</h2>
+    </div>
+    <div class="families reveal">
+      <div>Saryupareen Brahmin<small>via Australia</small></div>
+      <span class="x">×</span>
+      <div>Konkan Maratha<small>via America</small></div>
+      <span class="x">+</span>
+      <div>Sanskrit pride · Buddhist empiricism · Korea &amp; Japan · science<small>what we carry</small></div>
+    </div>
+    <div class="crit-grid">
+      <div class="crit reveal"><div class="k">Gender-neutral</div><p>Works for any kid — and rare enough that <b>the child defines the name</b>, not the other way around.</p></div>
+      <div class="crit reveal"><div class="k">A built-in short form</div><p>A punchy everyday name living inside the formal one. <b>No nickname committee required.</b></p></div>
+      <div class="crit reveal"><div class="k">No pronunciation traps</div><p>Safe in Australian and American mouths. <b>No retroflex casualties</b>, no lifelong spelling seminars if avoidable.</p></div>
+      <div class="crit reveal"><div class="k">Meaning that matters</div><p><b>Science &amp; inquiry, Buddhist thought, the cosmos</b> — or a vivid figure whose story embodies them.</p></div>
+      <div class="crit reveal"><div class="k">Rare, but at home</div><p>Belongs beside Milo and Nova without being them. Measured: <b>roughly under 100 US births a year.</b></p></div>
+      <div class="crit reveal"><div class="k">Deep-cut Sanskrit</div><p>Linguistic pride without a top-40 Indian name. <b>If three cousins share it, it's out.</b></p></div>
+    </div>
+  </section>
+
+  <!-- ============ METHOD ============ -->
+  <section id="method">
+    <div class="sec-head reveal">
+      <p class="eyebrow">Method</p>
+      <h2>Three research passes</h2>
+    </div>
+    <div class="passes">
+      <div class="pass reveal"><div class="k">01 · Etymology</div><p>Every transmission chain traced link by link. Genuine journeys kept; coincidental homophones exposed (Sumi is not Sumeru; the city of Nara is not Sanskrit).</p></div>
+      <div class="pass reveal"><div class="k">02 · Popularity</div><p>Raw US Social Security birth data through 2024–25, plus Australian state data. The "rare but fashionable" sweet spot, actually measured.</p></div>
+      <div class="pass reveal"><div class="k">03 · The schoolyard screen</div><p>Teasing hooks, slang, brand collisions, and meanings across six languages. Several beautiful names did not survive. Honesty over romance.</p></div>
+    </div>
+  </section>
+
+  <!-- ============ RARITY MAP ============ -->
+  <section id="rarity">
+    <div class="sec-head reveal">
+      <p class="eyebrow">The data</p>
+      <h2>The rarity map</h2>
+      <p>US births per year (SSA 2024, log scale). The names everyone hears about are on the left edge of fashionable — and the far side of rare.</p>
+    </div>
+    <div class="map reveal">
+      <p class="scale-note">bar length = US births per year, log scale · longer bar = more common</p>
+      <div class="rowchart">
+        <div class="band" aria-hidden="true"><span>the sweet spot</span></div>
+        <div class="bar-row"><span class="n">Kai</span><span class="bar" style="width:98%"></span><span class="v">4,276</span></div>
+        <div class="bar-row"><span class="n">Bodhi</span><span class="bar" style="width:82%"></span><span class="v">1,110</span></div>
+        <div class="bar-row"><span class="n">Veda</span><span class="bar" style="width:71%"></span><span class="v">407</span></div>
+        <div class="bar-row"><span class="n">Zen</span><span class="bar" style="width:66%"></span><span class="v">277</span></div>
+        <div class="bar-row"><span class="n">Kaya</span><span class="bar" style="width:66%"></span><span class="v">268</span></div>
+        <div class="bar-row"><span class="n">Tara</span><span class="bar" style="width:65%"></span><span class="v">247</span></div>
+        <div class="bar-row"><span class="n">Nara</span><span class="bar" style="width:51%"></span><span class="v">72 ↗</span></div>
+        <div class="bar-row hot"><span class="n">Kavi</span><span class="bar" style="width:50%"></span><span class="v">66</span></div>
+        <div class="bar-row hot"><span class="n">Reva</span><span class="bar" style="width:49%"></span><span class="v">63</span></div>
+        <div class="bar-row"><span class="n">Yuki</span><span class="bar" style="width:45%"></span><span class="v">44</span></div>
+        <div class="bar-row hot"><span class="n">Miro</span><span class="bar" style="width:38%"></span><span class="v">23</span></div>
+        <div class="bar-row"><span class="n">Pema</span><span class="bar" style="width:28%"></span><span class="v">10</span></div>
+        <div class="bar-row hot zero"><span class="n">Aruni</span><span class="bar" style="width:4%"></span><span class="v">0</span></div>
+        <div class="bar-row zero"><span class="n">Meru</span><span class="bar" style="width:4%"></span><span class="v">0</span></div>
+      </div>
+      <p class="legend"><b>▮ warm bars</b> = our contenders · grey = context · dashed = no recorded US births, ever. Kai is US&nbsp;#93 and Victoria&nbsp;#32; Bodhi is US&nbsp;#265 and Victoria&nbsp;#83 — the aesthetic we want, already taken.</p>
+    </div>
+  </section>
+
+  <!-- ============ FINALISTS ============ -->
+  <section id="finalists">
+    <div class="sec-head reveal">
+      <p class="eyebrow">The finalists</p>
+      <h2>Three names that survived everything</h2>
+    </div>
+
+    <!-- KAVI -->
+    <article class="finalist reveal">
+      <div>
+        <p class="rank">Finalist · 01</p>
+        <h3 class="name">Kavi <span>कवि · KAH-vee</span></h3>
+        <p class="epithet">The seer-scientist</p>
+        <div class="story">
+          <p>In the Ṛgveda, a <b>kavi</b> is not merely a poet. It is the visionary sage who perceives <b>ṛta — the hidden order of the cosmos</b> — and puts it into words. It is the closest thing Sanskrit has to a single word for "one who looks at the world and sees what is really there," which is a fair job description for a scientist and a poet alike.</p>
+          <p>Phonetically it is a sibling of Kai, Levi, and Ravi — it sounds native in a 2027 American classroom while being nobody else's name. And it works instantly, unexplained, in both India and the West.</p>
+        </div>
+      </div>
+      <aside class="rail">
+        <dl>
+          <dt>US births / yr</dt><dd>66 · <em>rising +144% since 2020</em>, still years from common</dd>
+          <dt>Gender read</dt><dd>92% M in usage — but American Girl's 2023 Girl of the Year is <em>Kavi Sharma</em>. Reads both ways.</dd>
+          <dt>Short form</dt><dd>Already short · "Kav" happens naturally</dd>
+          <dt>Risk screen</dt><dd>"cavity" tease (mild) · KAH/KAY vowel coaching</dd>
+        </dl>
+        <p class="verdict"><b>Verdict —</b> the dual citizen. Strongest science story per syllable; effortless in both worlds.</p>
+      </aside>
+    </article>
+
+    <!-- MIRO -->
+    <article class="finalist reveal">
+      <div>
+        <p class="rank">Finalist · 02</p>
+        <h3 class="name">Miro <span>MEE-roh</span></h3>
+        <p class="epithet">Loving-kindness, well-traveled</p>
+        <div class="story">
+          <p>The East-Asia transmission name we hoped existed — and it is genuine at every link. Sanskrit <b>mitra</b> (friend) became <b>maitrī</b> (loving-kindness), became <b>Maitreya, the future Buddha</b> — who crossed China into Korea as <b>Mireuk</b> and Japan as <b>Miroku</b>. Korea's most beloved sculpture, the seventh-century Gilt-Bronze Pensive Bodhisattva, <i>is</i> Mireuk; Silla's hwarang warriors believed themselves his incarnations.</p>
+          <p>Bonus verified lives: Miro is independently a common Finnish name, a Slavic name from <b>mir — "peace, world"</b> — and Joan Miró supplies the art-house cool. One name, three true origins, three continents.</p>
+        </div>
+        <div class="chain" aria-label="Mitra to Maitreya to Mireuk and Miroku to Miro">
+          <div class="tok"><span class="glyph">मित्र</span><span class="rom">mitra</span><span class="where">friend</span></div>
+          <div class="link" aria-hidden="true"></div>
+          <div class="tok"><span class="glyph">मैत्रेय</span><span class="rom">Maitreya</span><span class="where">future buddha</span></div>
+          <div class="link" aria-hidden="true"></div>
+          <div class="tok"><span class="glyph">미륵</span><span class="rom">Mireuk</span><span class="where">Korea</span></div>
+          <div class="tok"><span class="glyph">弥勒</span><span class="rom">Miroku</span><span class="where">Japan</span></div>
+          <div class="link" aria-hidden="true"></div>
+          <div class="tok dest"><span class="glyph">Miro</span><span class="rom">peace · world</span><span class="where">Slavic / Finnish</span></div>
+        </div>
+      </div>
+      <aside class="rail">
+        <dl>
+          <dt>US births / yr</dt><dd>~23 · flat · <em>rarest of the finalists</em></dd>
+          <dt>Gender read</dt><dd>M-leaning; at this rarity the kid defines it</dd>
+          <dt>Short form</dt><dd>It <em>is</em> the short form — two syllables, done</dd>
+          <dt>Risk screen</dt><dd>Cleanest on the list · Miro app = office joke at worst · occasional Milo mix-up</dd>
+        </dl>
+        <p class="verdict"><b>Verdict —</b> the traveler. Nails the Milo/Arlo aesthetic exactly; the Korea–Japan story is real, not vibes.</p>
+      </aside>
+    </article>
+
+    <!-- ARUNI -->
+    <article class="finalist reveal">
+      <div>
+        <p class="rank">Finalist · 03</p>
+        <h3 class="name">Aruni <span>अरुणि · ah-ROO-nee</span></h3>
+        <p class="epithet">The first empiricist, at dawn</p>
+        <div class="story">
+          <p>The deepest science narrative we found anywhere. <b>Uddālaka Āruṇi</b>, Chāndogya Upaniṣad, ~8th century BCE, teaches his son by <b>demonstration</b>: dissolve salt in water overnight — you cannot see it, but taste anywhere and it is there. Scholars genuinely rank him among history's first natural philosophers; popular essays call him "the first scientist."</p>
+          <p>The name itself comes from <b>aruṇa — dawn-red</b> — the crimson charioteer who pulls the sun into the sky. Inquiry, dawn, and cosmos folded into one word. Zero recorded US births, ever: nobody on Earth shares it, yet it sounds like a neighbor of Aria and Luna.</p>
+        </div>
+      </div>
+      <aside class="rail">
+        <dl>
+          <dt>US births / yr</dt><dd>0 recorded, ever · <em>completely unique</em></dd>
+          <dt>Gender read</dt><dd>Unisex in India &amp; Nepal · F in Sri Lanka</dd>
+          <dt>Short form</dt><dd><em>Aru</em> or <em>Runi</em> — both built in</dd>
+          <dt>Risk screen</dt><dd>Permanent spell-it-out name · one pronunciation coach per stranger</dd>
+        </dl>
+        <p class="verdict"><b>Verdict —</b> the origin story. If the science identity is the heart of it, this is the name no one else will ever have.</p>
+      </aside>
+    </article>
+  </section>
+
+  <!-- ============ WILDCARDS ============ -->
+  <section id="wildcards">
+    <div class="sec-head reveal">
+      <p class="eyebrow">The wildcards</p>
+      <h2>Bolder, quieter, riskier</h2>
+    </div>
+    <div class="wild-grid">
+      <div class="wild reveal">
+        <h3 class="name">Zen <span>禅 · ध्यान</span></h3>
+        <p class="epithet">The famous journey itself</p>
+        <p>The 1,500-year chain in the header — <b>dhyāna → jhāna → chán → sŏn → zen</b> — worn as a name. One syllable, unmissable meaning, gender-flexible.</p>
+        <p class="stat">277 US births/yr · at the top-1000 doorstep · <em>reads a little on-the-nose</em></p>
+      </div>
+      <div class="wild reveal">
+        <h3 class="name">Meru <span>सुमेरु · 수미산</span></h3>
+        <p class="epithet">The mountain the stars turn around</p>
+        <p>The axial peak of Buddhist cosmology — <b>Sumeru</b>, "wondrous Meru" — carried into Japanese as <b>Shumisen</b>, Korean as <b>Sumisan</b>. The still center of a turning universe.</p>
+        <p class="stat">0 recorded US births · boldest pick · <em>expect "did you invent it?"</em></p>
+      </div>
+      <div class="wild reveal">
+        <h3 class="name">Reva <span>रेवा · RAY-vah</span></h3>
+        <p class="epithet">The leaping river</p>
+        <p>The old Sanskrit name of the <b>Narmadā</b> — "she who leaps." A real river name with a modern sound: Nova- and Ava-adjacent, quiet, stable.</p>
+        <p class="stat">63 US births/yr · flat for a decade · <em>zero spike risk</em> · F-leaning</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ GRAVEYARD ============ -->
+  <section id="graveyard">
+    <div class="sec-head reveal">
+      <p class="eyebrow">Full disclosure</p>
+      <h2>Beautiful, but no</h2>
+      <p>Every candidate we loved and why the research killed it. Honesty over romance — each entry earned its cause of death.</p>
+    </div>
+    <div class="grave-grid">
+      <div class="grave reveal"><span class="n">Kai</span><p><span class="why">too common</span>US&nbsp;#93, Victoria&nbsp;#32. The aesthetic we want — already everyone's.</p></div>
+      <div class="grave reveal"><span class="n">Bodhi</span><p><span class="why">too common</span>US&nbsp;#265, Australia top-100. The obvious Buddhist pick, and therefore gone.</p></div>
+      <div class="grave reveal"><span class="n">Nara</span><p><span class="why">story collapsed</span>Best pure sound of all — but the Japan-city link is homophony, not Sanskrit, and Nara Smith is spiking it (births doubled 2023→24).</p></div>
+      <div class="grave reveal"><span class="n">Soma</span><p><span class="why">collision</span>Vedic moon-elixir vs. <b>Brave New World's</b> drug — assigned high-school reading — plus a real prescription pill. Adults lose first.</p></div>
+      <div class="grave reveal"><span class="n">Anu</span><p><span class="why">schoolyard fatal</span>Kaṇāda's word for <b>atom</b> — and one letter from disaster. The playground always finds it.</p></div>
+      <div class="grave reveal"><span class="n">Kanad</span><p><span class="why">collision</span>Founder of atomism, possibly before Democritus — spelled "Canada" in eleven languages.</p></div>
+      <div class="grave reveal"><span class="n">Yukti</span><p><span class="why">pronunciation</span>"Reasoning," same root as yoga — the yoking-together of ideas. Anglo mouths make it "YUCK-tee."</p></div>
+      <div class="grave reveal"><span class="n">Veda</span><p><span class="why">discovered</span>Literally "knowledge" — already at US&nbsp;#692 and climbing for twenty years straight.</p></div>
+      <div class="grave reveal"><span class="n">Sumi</span><p><span class="why">homophone</span>The Sumeru link is a pun, not an etymology — and "sue me" writes itself.</p></div>
+      <div class="grave reveal"><span class="n">Sachi</span><p><span class="why">homophone</span>Japanese "happiness" ∥ Sanskrit "eloquence" — a lovely coincidence, but no transmission.</p></div>
+      <div class="grave reveal"><span class="n">Setsuna</span><p><span class="why">connotation</span>क्षण kṣaṇa, "an instant," genuinely became 刹那 setsuna — but it sits next to <i>setsunai</i>, "heartache," and reads anime-coded.</p></div>
+      <div class="grave reveal"><span class="n">Sena</span><p><span class="why">collision</span>Korean, Japanese, Turkish and Sanskrit lives — and John Cena airhorns forever.</p></div>
+      <div class="grave reveal"><span class="n">Mitra</span><p><span class="why">reads surname</span>The god who went east as Maitreya and west as Mithras — but lands as a Bengali surname / Persian classic.</p></div>
+      <div class="grave reveal"><span class="n">Indra</span><p><span class="why">deity-heavy</span>Indra's Net is <i>the</i> Buddhism-meets-science metaphor — the name itself reads mythic and gender-scrambled.</p></div>
+      <div class="grave reveal"><span class="n">Kaya</span><p><span class="why">last decade</span>Warm everywhere (Noongar for "hello") — but its US moment was 2005, and <i>Kaia</i> owns the trend now.</p></div>
+      <div class="grave reveal"><span class="n">Tara</span><p><span class="why">generation off</span>Star + "she who carries across" + the goddess born of a compassionate tear — and a Gen-X mum name in both countries. <b>→ the shelf</b></p></div>
+      <div class="grave reveal"><span class="n">Nachiketa</span><p><span class="why">schoolyard fatal</span>The boy who refused Death's riches and demanded truth — but "Nachi" fails the cafeteria badly. <b>→ the shelf</b></p></div>
+    </div>
+  </section>
+
+  <!-- ============ SHELF ============ -->
+  <section id="shelf">
+    <div class="shelf reveal">
+      <h3>The middle-name shelf</h3>
+      <p>Names too heavy, too storied, or too ours for first-name duty — perfect one slot back, where a name can be all meaning and no logistics.</p>
+      <ul>
+        <li><span class="n">Nachiketa</span><p>The boy who waited at Death's door and traded every riches for one true answer. The family motto, hidden in the middle.</p></li>
+        <li><span class="n">Tara</span><p>Star, and "she who carries across" — the guide over the ocean of saṃsāra.</p></li>
+        <li><span class="n">Saryu</span><p>Your own river. The lineage says its name quietly, and the child carries it everywhere.</p></li>
+      </ul>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <p class="trivia">One last proof that words travel: <b>Canon cameras are named for Kannon</b> — Avalokiteśvara, compassion itself, arrived in Japan and then in your pocket. A good name goes far.</p>
+    <p class="meta">Researched July 2026 · US SSA raw birth data through 2024, 2025 supplements · Victoria BDM 2025 · etymologies verified link-by-link; homophones disclosed · teasing screen across English, Spanish, Arabic, Mandarin, Korean, Japanese &amp; Hindi<br>ध्यान · 禪 · 선 · 禅 — made with love, for a small person arriving 2027</p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var stars=document.querySelector('.hero .stars');
+  if(stars){
+    var seed=42;
+    function rnd(){seed=(seed*16807)%2147483647;return seed/2147483647}
+    for(var i=0;i<70;i++){
+      var s=document.createElement('i');
+      s.style.left=(rnd()*100)+'%';
+      s.style.top=(rnd()*72)+'%';
+      var sc=.5+rnd()*1.1;
+      s.style.transform='scale('+sc+')';
+      s.style.opacity=(0.15+rnd()*0.5).toFixed(2);
+      stars.appendChild(s);
+    }
+  }
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){
+      es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}});
+    },{rootMargin:'0px 0px -8% 0px'});
+    document.querySelectorAll('.reveal').forEach(function(el){io.observe(el)});
+  }else{
+    document.querySelectorAll('.reveal').forEach(function(el){el.classList.add('in')});
+  }
+})();
+</script>
+</body>
+</html>
